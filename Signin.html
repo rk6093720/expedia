@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+       
+        #container{
+            width:30%;
+            height: 800px;
+            /* border: 2px solid red; */
+            margin: auto;
+        }
+        input{
+            width: 80%;
+            height: 50px;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
+        .head{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: initial; */
+        }
+        #head1{
+            width: 7%;
+            height: 7%;
+            margin-left: 5px;
+        }
+        #head2{
+            margin-left: 15px;
+        }
+        #para{
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            margin-left: 15px;
+        }
+        #para1{
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: normal;
+            margin-left: 15px;
+        }
+        #btn{
+            width: 80%;
+            height: 50px;
+            background-color: blue;
+            margin-left: 15px;
+            border-radius: 5px;
+            color: #cecece;
+
+        }
+        #parag{
+            margin-left: 85px;
+        }
+        #continue{
+            margin-left: 120px;
+        }
+        #picture{
+            display: flex;
+            margin-left: 140px;
+            /* margin: auto; */
+            flex-wrap: wrap;
+        }
+        #picture1{
+            width: 15px;
+            height: 15px;
+            /* border-radius: 40%; */
+            
+        }
+        button>img{
+            width: 15px;
+            height: 15px;
+        }
+        #fp{
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>SIGN IN</h1>
+        <form >
+         <input id="email"type="email" placeholder="Email address">
+         <br><br>
+         <input id="pwd" type="password" placeholder="Password" >
+         <br><br>
+        </form>
+
+        
+        <div class="head">
+            <div id="head1">
+            <input type="checkbox">
+            </div>
+            <div id="head2">
+            <p>Keep me signed in</p>
+             </div>
+        </div>
+    
+    <div id="para">
+        <p>Selecting this checkbox will keep you signed into your account on this device untill you sign out.Do not select this on shared devices.</p>
+    </div>
+    <br>
+    <div id="para1">
+        <p>By creating an account, I agree to the Expedia <a href="#">Terms and Conditions, Privacy Statement </a> and <a href="#"> Expedia Rewards Terms and Conditions.</a></p>
+    </div>
+       <form>
+         <button id="btn"onclick="input()" type="button" value="Signin">Signin</button>
+      </form>
+      <div id="fp">
+          <a href="https://www.expedia.com/forgotpassword?ckoflag=0&uurl=e3id%3Dredr%26rurl%3D%2F&enable_ulfp=true">Forgot Password</a>
+      </div>
+    <div id="parag">
+    <p>Don't have an account?<a href="Signup.html">Create One</a></p>
+     </div>
+     <div id="continue"><p>or continue with</p></div>
+     <div id="picture">
+         <button id="picture1a">
+         <img  onclick="input1()"src="https://a.travel-assets.com/egds/marks/google.svg" alt="">
+        </button>
+        <button id="picture1b">
+         <img   onclick="input2()"src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="">
+        </button>
+        <button id="picture1c">
+            <img onclick="input3()"src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
+        </button>
+     </div>
+    
+    </div>  
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("button",input);
+    var reguser=JSON.parse(localStorage.getItem("userDataBase")) || [];
+    function input(){
+    //    event.preventDefault();
+       var email =document.querySelector("#email").value;
+       var pass=document.querySelector("#pwd").value;
+    //    console.log(email,firstname,lastname,pass);
+    for(var i=0;i<reguser.length;i++)
+    {
+          
+        console.log(reguser[i].emailAdd,reguser[i].passwd);
+        if(reguser[i].emailAdd==email && reguser[i].passwd==pass)
+        {
+            window.location.href="index.html";
+        }
+      
+    }
+       
+    //    reguser.push(userStack);
+    // //    console.log(arr);
+    // localStorage.setItem("userDataBase",JSON.stringify(reguser));
+    // alert("Signin successful")
+    // window.location.href="Signin.html";
+    }
+    
+
+      var user=[]
+    function input1(){
+       var a=`https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&client_id=919023678118-cdrmliol1m0qorr1hm0oe877pnrd02rb.apps.googleusercontent.com&response_mode=query&scope=openid%20profile%20email&state=sRRaTRmOFzYoxbjtVFpVSecZOITCo7gE635HmQXg1Zg&nonce=8mlGK_y4X6Ncnw17vHTWaPmacoJGji497VKCnDHTYsI&redirect_uri=https%3A%2F%2Fwww.expedia.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Fgoogle-web&flowName=GeneralOAuthFlow`;
+       user.push(a);
+       console.log(a);
+       if(user)
+       {
+        //    alert("login successfull")
+        window.location.href="Signin.html";
+       }
+       else{
+           alert("user can't login")
+       }
+    }
+    var user1=[]
+    function input2(){
+       var a1=`https://www.facebook.com/login.php?skip_api_login=1&api_key=131538103586818&kid_directed_site=0&app_id=131538103586818&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D131538103586818%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3D5PINtQs99ozA6oKf7OwDeC_p5JgGJfTnPYZLCSat2m4%26redirect_uri%3Dhttps%253A%252F%252Fwww.expedia.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Df734e707-4846-4657-ad45-3f3d245a9338%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.expedia.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D5PINtQs99ozA6oKf7OwDeC_p5JgGJfTnPYZLCSat2m4%23_%3D_&display=page&locale=hi_IN&pl_dbl=0`;
+       user1.push(a1);
+       console.log(a1);
+       if(user1)
+       {
+           window.location.href="Signin,html";
+       }
+       else{
+           alert("user can't login")
+       }
+    }
+   
+    var user2=[]
+    function input3(){
+       var a2=`https://www.facebook.com/login.php?skip_api_login=1&api_key=131538103586818&kid_directed_site=0&app_id=131538103586818&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv11.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D131538103586818%26response_mode%3Dquery%26scope%3Dpublic_profile%2Bemail%26state%3D5PINtQs99ozA6oKf7OwDeC_p5JgGJfTnPYZLCSat2m4%26redirect_uri%3Dhttps%253A%252F%252Fwww.expedia.com%252Feg-auth-svcs%252Fapi%252Fv1%252Foauth2%252Fcallback%252Ffacebook-web%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Df734e707-4846-4657-ad45-3f3d245a9338%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.expedia.com%2Feg-auth-svcs%2Fapi%2Fv1%2Foauth2%2Fcallback%2Ffacebook-web%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D5PINtQs99ozA6oKf7OwDeC_p5JgGJfTnPYZLCSat2m4%23_%3D_&display=page&locale=hi_IN&pl_dbl=0`;
+       user2.push(a2);
+       console.log(a2);
+       if(user2)
+       {
+           window.location.href="Signin,html";
+       }
+       else{
+           alert("user can't login")
+       }
+    }
+   
+</script>

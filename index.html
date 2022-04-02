@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia</title>
+  
+    <style>
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+     height:50px;
+    border: 2px solid teal;
+    padding: 25px 0 0 20px;
+
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 5px;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5px;
+    /* cursor: pointer; */
+    /* position: fixed; */
+}
+#more{
+    width:5%;
+    height:5%;
+}
+#image{
+    width:20px;
+    height:20px;
+    margin-top: 0px;
+}
+#paragraph{
+    margin-top: 0px;
+}
+
+#moretravel{
+    width: 20%;
+    height: 15%;
+  
+    
+}
+#lang{
+    /* display: flex; */
+    margin-left: 5px;
+    /* margin-top: 0; */
+}
+.langimg{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+     width: 100%;
+     height: 48%;
+     display: flex;
+     background-color: #cecece;
+}
+
+.greatgrandfather{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid blue; */
+    margin: auto;
+    margin-top: 30px;
+}
+.ggf{
+    margin-top: 10px;
+}
+.grandfather{
+   
+    width: 80%;
+    height: 300px;
+    border: 2px solid #cecece;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.father{
+    width: 80%;
+    height: 20%;
+    border:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.son{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.father1{
+    border: 0px;
+}
+.fa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 70%;
+}
+#Goingto{
+    width: 2%;
+    height: 2%;
+}
+#input{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid #cecece; */
+    margin-top:10px;
+    margin-left: 2px;
+}
+#go{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+#Check-in{
+    width:22%;
+    height: 50px;
+    border-radius: 5px;
+
+}
+#Check-out{
+    width:23%;
+    height: 50px;
+    border-radius: 5px;
+}
+#e{
+    width: 80%;
+    height: 400px;
+    border: 2px solid #cecece;
+    margin-top: 15px;
+    
+}
+#ediv{
+    text-align: center;
+    margin-top: 0%;
+}
+h2{
+    margin-left: 15%;
+}
+#headertrip{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    border: 2px solid #cecece;
+}
+#headertrip>div >p{
+    margin-left: 5px;
+   
+}
+#blank{
+    width: 80%;
+    height: 200px;
+    border: #cecece;
+    background-color: #cecece;
+    margin: auto;
+    margin-top: 5px;
+}
+.cityview{
+    width: 80%;
+    height: 500px;
+    /* border: 2px solid blue; */
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+#cityview1{
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid red; */
+    margin-left: 15px;
+}
+#cityimg{
+    width: 100%;
+    height: 70%;
+    /* border: 2px solid violet; */
+    
+}
+#cityimg1{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+   
+}
+#cityview1>div{
+    margin-top: 0px;
+}
+#container{
+    width: 80%;
+    height: 400px;
+    border: 2px solid #cecece;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#containerimg{
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+#containerapp{
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+}
+#contimg{
+    width: 100%;
+    height: 100%;
+}
+#leftcontainerapp{
+    flex:8;
+    /* border: 2px solid red; */
+}
+#rightcontainerapp{
+    flex: 2;
+    /* border: 2px solid blue; */
+}
+#rightimg{
+    width: 100%;
+    height: 100%;
+    margin-top: 25%;
+}
+h2{
+    margin-left: 35%;
+}
+#a{
+    margin-left: 35%;
+}
+.space{
+    width: 100%;
+    height: 200px;
+    /* border: 2px solid red; */
+    /* display: flex; */
+}
+.utik1{
+    display: flex;
+    margin-left: 10%;
+}
+.utiklayout{
+    margin-top: 5px;
+}
+.lfa{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.lfa1{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+#btnn{
+    width: 5%;
+    height: 5%;
+}
+ </style>
+</head>
+<body>
+     <!-- this is a navbar of expedia.com -->
+    <div class="navbar">
+        <div class="left">
+            <div id="image">
+               <img src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2" alt="expedia.com"> 
+            </div>
+            <!-- <div id="moretravel">More travel <img  id="more"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfb_cmJQ4znKvnE7Ar_aav6aeR6vqLekQu0A&usqp=CAU" alt="Moretravel"></div> -->
+        
+             <div  id="moretravel">  
+                    <select >  
+                <option >Moretravel</option>
+                <option >Stays</option>
+                <option >Flights</option>
+                <option >Cars</option>
+                <option >Packages</option>
+                <option >Things to do</option>
+                <option >Cruises</option>
+                </select>
+            </div>  
+        
+        </div>
+        <div class="right">
+                  
+                    <div class="langimg">
+                        <button  >
+                      <div id="li">
+                         <img  id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx6ks9fPtgj5P4IpC3utvD6g_AsLpnhARmQ&usqp=CAU" alt="languageimg"> 
+                         </div>
+                         <div id="lang"><p id="paragraph">ENGLISH</p></div>
+                        </button>
+                         
+                    </div>
+                    
+                 <div onclick="window.location.href='listyourproperty'">List your property</div>
+                 <div onclick="window.location.href='support.html'">Support</div>
+                 <div onclick="window.location.href='trip.html'">Trip</div>
+                 <div onclick="window.location.href='Signin.html'">Signin</div>
+        </div>
+    </div>
+<!-- ........................................................next div.................................................. -->
+  <div class="greatgrandfather">
+       <div class="grandfather">
+            <div class="father1" >
+            <ul class="father" >
+                    <li class="son">
+                        <a href="?pwaLob=wizard-hotel-pwa-v2" class="son1">
+                            <span class="son2">Stays</span>
+                        </a>
+                    </li>
+                    <li class="son">
+                        <a href="?pwaLob=wizard-flight-pwa" class="son1">
+                            <span class="son2">Flights</span>
+                        </a>
+                    </li>
+                    <li class="son">
+                        <a href="?pwaLob=wizard-car-pwa" class="son1">
+                            <span class="son2">Cars</span>
+                        </a>
+                    </li>
+                    <li class="son">
+                        <a href="?pwaLob=wizard-package-pwa" class="son1">
+                            <span class="son2">Packages</span>
+                        </a>
+                    </li>
+                    <li class="son">
+                        <a href="?pwaLob=wizard-1x-pwa" class="son1">
+                            <span class="son2">Things to do</span>
+                        </a>
+                    </li>
+                    <li class="son">
+                        <a href="?pwaLob=wizard-cruise-pwa" class="son1">
+                            <span class="son2">Cruise</span>
+                        </a>
+                    </li>
+            </ul>
+            </div>
+            <hr>
+ <!-- .......................................room and travel..................... -->
+            <div class="ggf">
+                <div class="gf">
+                     <div class="fa">
+                         
+                            
+                        <select>
+                            <option>
+                                <div id="travel"  onclick="travel()">1 room,1 travelers </div>
+                                                       
+                            </option>
+                        </select>
+                                    
+        
+                    </div>
+                </div>
+            </div>
+<!-- ......................................input............................................................ -->
+            <div id="input">
+                <form >
+                <input id="go" type="Goingto" value="Going to" >
+                <input id="Check-in"type="Check-in" value="Check-in">
+                <input id="Check-out"type="Check-out" value="Check-out">
+               </form>
+           
+            <div>
+                <input type="checkbox" >
+                <p>Add a flight</p>
+            </div>
+            
+        </div>
+            
+        
+     </div>
+  </div>
+
+  <!-- ....................................................................................... -->
+
+
+     <div id="ediv" >
+         <img id="e"src="https://a.travel-assets.com/travel-assets-manager/cmct-4981/US-CA-UK-FR-DE-MX-AU-HP-Hero-D-928x398.jpg" alt="">
+         
+     </div>
+     <!-- ..................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..................... -->
+
+     <div id="header">
+         <h2>Here to help keep you on the move</h2>
+         <div id="headertrip" >
+             <div ><h1>Change or cancel a trip</h1>
+                <p>Make updates to your itinerary or cancel a Booking</p></div>
+             <div ><h1>Use a credit or coupon</h1>
+                <p>Apply a coupon code or credit to a new trip</p></div>
+             <div> <a href="trip.html"><h1>Track your refund</h1>
+                <p>Check the status of a refund currently in progress</p></a></div>
+         </div>
+     </div>
+<!-- ..................................................................................................        -->
+
+<div id="blank"></div>
+<!-- ....................................................image......................................  -->
+       <div class="cityview">
+           <div id="cityview1">
+               <div id="cityimg">
+                <a href="https://www.expedia.com/lp/b/city-breaks?rfrr=Editorial3xCityBreaks">  <img id="cityimg1" src="https://a.travel-assets.com/travel-assets-manager/4943-madetotravel/MTT-HP-Editorial-3up-384x256-3.jpg" alt=""></a>
+                </div>
+                <div>
+                   <h6>CITY VIEW</h6>
+                   <p>So much to see, so much to do</p>
+                </div>
+               
+           </div>
+           <div id="cityview1">
+            <div id="cityimg">
+                <a href="https://www.expedia.com/lp/b/city-breaks?rfrr=Editorial3xCityBreaks">  <img id="cityimg1" src="https://a.travel-assets.com/travel-assets-manager/3301-road-trips/NORAM-Merch-HP-Editorial-3up-384x256-1.jpg" alt=""></a>
+            </div>
+            <div>
+                <h6>GRAB YOUR KEYS</h6>
+                <p>You need a change of scenery</p>
+            </div>   
+           
+           </div>
+           <div id="cityview1">
+            <div id="cityimg">
+              <a href="https://www.expedia.com/lp/b/city-breaks?rfrr=Editorial3xCityBreaks">  <img id="cityimg1"src="https://a.travel-assets.com/travel-assets-manager/4943-madetotravel/MTT-HP-Editorial-3up-384x256-1.jpg" alt=""></a>
+            </div>
+            <div>
+                <h6>A BIT OF WARMTH</h6>
+                <p>Heat up your feet and everything else</p>
+            </div>
+           </div>
+       </div>
+<!-- .............................................................................   -->
+       <div class="cityview">
+        <div id="cityview1">
+            <div id="cityimg">
+             <a href="https://www.expedia.com/lp/b/city-breaks?rfrr=Editorial3xCityBreaks">  <img id="cityimg1" src="https://a.travel-assets.com/travel-assets-manager/4943-madetotravel/MTT-HP-Editorial-2up-457x257-1-new2.jpg" alt=""></a>
+             </div>
+             <div>
+                <h6>LOOKS LIKE A DREAM</h6>
+                <p>A little look at 2022's drean destinations</p>
+             </div>
+            
+        </div>
+        <div id="cityview1">
+         <div id="cityimg">
+             <a href="https://www.expedia.com/lp/b/city-breaks?rfrr=Editorial3xCityBreaks">  <img id="cityimg1" src="https://a.travel-assets.com/travel-assets-manager/4943-madetotravel/MTT-HP-Editorial-2up-457x257-4.jpg" alt=""></a>
+         </div>
+         <div>
+             <h6>MADE TO TRAVEL</h6>
+             <p>It's just so nice out there.So let's go</p>
+         </div>   
+        
+        </div>
+       
+    </div>
+<!-- ----------------------------------------------------- -->
+
+
+<div id="container">
+    <div id="containerimg">
+        <img id="contimg" src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_App_650x514.jpg" alt="">
+    </div>
+    <div id="containerapp">
+        <div id="leftcontainerapp">
+            <div><h1>Members get more on the app</h1>
+            <p>Earn double Expedia Rewards points when you book on the app. Plus, get travel alerts and manage your bookings on the go.</p></div>
+            <br>
+            <div><h2>Text yourself a download link</h2></div>
+            <form>
+                <input id="countrycode" type="country"  placeholder="countrycode">
+                <input id="phone" type="number" placeholder="Phone number">
+                <button id="btnnn"onclick="input()" type="button" value="Gettheapp">Get the app</button>
+            </form>
+            <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
+            </p>
+        </div>
+        <div id="rightcontainerapp">
+            <div><img id="rightimg"src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_HP.png" alt=""></div>
+            <p>Scan the QR code</p>
+        </div>
+    </div>
+</div>
+<!-- .........................................last and final touch...............  -->
+<div id="last">
+    <h2>Be inspired and discover more with Expedia</h2>
+       <a id="a" href="https://www.expedia.com/?pwaDialog=linksDialog-tab-group-1">Discover new places and experiences</a>  
+</div>
+<br>
+<div class="space">
+        <div class="globalnavigation">
+            <div class="utik">
+                <ul class="utik1">
+                    <li class="utiklayout">
+                        <a href="https://www.expediagroup.com"> 
+                         <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="utiklayout1">
+                        <h3>company</h3>
+                        <ul class="nobullet">
+                            <li>
+                                <div>
+                                    <a href="https://www.expediagroup.com">About</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://lifeatexpediagroup.com">Jobs</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://apps.expediapartnercentral.com/en_US/list?utm_medium=referral&utm_source=wwwexpediacom-en_US&utm_campaign=HomePage&utm_contentewd=footer-btn&siteId=1&tpid=1&eapid=0&langId=1033">List your property</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expediagroup.com/partner-with-us/default.aspx">Partnerships</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://newsroom.expedia.com/">Newsroom</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investor Relations</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://advertising.expedia.com/getting-started/brands/expedia/">Advertising</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="utiklayout2">
+                        <h3>Explore</h3>
+                        <ul class="nobullet">
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/United-States-Of-America.dx201">United States of America travel guide</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations">Hotels in United States of America</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Vacation-Rental-Destinations">Vacation rentals in United States of America</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/United-States-Of-America.d201.Destination-Travel-Guides">Vacation Packages in united States of America</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations">Domestic flights</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations">Car rentals in United States of America</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/Accommodations">All Accommdation</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="utiklayout3">
+                        <h3>Terms and Policies</h3>
+                        <ul class="nobullet">
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/lp/lg-privacypolicy">Privacy policy</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/lp/lg-legal">Terms of use</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.vrbo.com/en-gb/legal/traveller-terms-and-conditions">Vrbo terms and conditions</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/loyaltyrewards/pages/info-rewards/expediarewards/terms.htm">Expedia Rewards Terms</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/p/info-other/web-accessibility-policy">Accessiblity</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/dnsmpi">Do not sell my personal information</a>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="utiklayout4">
+                        <h3>Help</h3>
+                        <ul class="nobullet">
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/">Support</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/#/articles/399/34/12326">Cancel your hotel or vacation rental booking</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/#/articles/397/34/12324">Cancel your flight</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/#/articles/396/53/15253">Refund timelines,policies & processes</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/#/articles/396/53/12385">Use an Expedia coupon</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.expedia.com/service/#/articles/396/52/12386">International travel documents</a>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+</div>
+<hr>
+<ul class="lastandfinal">
+    
+        <div class="lfa">
+            
+         Expedia, Inc. is not responsible for content on external Web sites.
+        </div>
+
+    
+
+        <div class="lfa1">
+            © 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc. CST# 2029030-50.
+        </div>
+</ul>
+</body>
+</html>
+<script>
+      document.querySelector("form").addEventListener("button",input)
+    var arr=JSON.parse(localStorage.getItem("Database")) || [];
+    function input(){
+        var countrycode=document.querySelector("#countrycode").value;
+        var phone=document.querySelector("#phone").value;
+        
+     var user={
+           code:countrycode,
+         phonenumber:phone,
+         
+     }
+     arr.push(user);
+    //  console.log(arr);
+    localStorage.setItem("Database",JSON.stringify(arr));
+    alert("Download the app");
+    window.location.href="Signup.html";
+    }
+    // document.getElementById("travel").addEventListener('submit',function(){
+    //     window.location.href="signup.html";
+    // })
+
+  
+</script>

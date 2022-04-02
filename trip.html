@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 30%;
+            height: 550px;
+            border: 2px solid red;
+            margin: auto;
+           
+        }
+       
+        #img{
+            width: 50%;
+            height: 30%;
+            border: 2px solid #cecece;
+            margin: auto;
+            border-radius: 50%;
+            margin-left: 100px;
+        }
+       button{
+           width:70%;
+           height: 50px;
+           margin-left: 80px;
+           background-color: blue;
+           border-radius: 5px;
+       }
+       #book{
+             width:80%;
+             height: 20%;
+             border: 2px solid #cecece;
+             margin: auto;
+             display: flex;
+             flex-wrap: wrap;
+       }
+       #search{
+           width: 40px;
+           height: 40px;
+           /* border: 2px solid red; */
+           margin-top: auto;
+           margin-bottom: 10px;
+           margin-left: 20px;
+       }
+       #book>#search1{
+           display: flex;
+           flex-wrap: wrap;
+       }
+      
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Trips</h1>
+        <div >
+            <img id="img" src="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-lock-icon-png-image_318067.jpg" alt="">
+        </div>
+        <br>
+       <div ><button onclick="btn()">sign in or create free account</button></div>
+       <br>
+       <div id="book" onclick="window.location.href='Signin.html'">
+           <div id="book1">
+               <div id="book2">
+                   <h3>Want to see a booking without in?</h3>
+               </div>
+               <div id="book3"><p>Use an itinerary number to access it</p></div>
+           </div>
+           <div id="search1">
+               <img id="search"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQScYvFDjqhTa5ZF6ujUvYGNC-Bvk6l1vTsrw&usqp=CAU" alt="">
+           </div>
+           
+       </div>
+    </div>
+</body>
+</html>
+<script>
+       function btn(){
+           window.location.href="Signin.html";
+       }
+</script>
